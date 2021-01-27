@@ -22,8 +22,11 @@ def calculateGames(pointArray):
 	R = 0
 	game = [0,0]
 	for point in pointArray:
-		if point == 0 : L += 1
-		if point == 1 : R += 1
+		point = int(point)
+		if point == 0 : 
+			L += 1
+		if point == 1 : 
+			R += 1
 		if L >= 3 and R >= 3 :
 		    if L - R > 1:
 		    	game[0] += 1
